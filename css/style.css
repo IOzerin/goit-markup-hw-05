@@ -122,12 +122,29 @@ header .container {
 
 .navigation-links,
 .navigation-contacts {
+  display: flex;
   text-decoration: none;
   color: var(--txt-c-dark);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative;
+}
+
+.selected::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 4px;
+  background: var(--c-accent);
+  position: absolute;
+  bottom: -33px;
+  border-radius: 2px;
+}
+
+.selected {
+  color: var(--c-accent);
 }
 
 .navigation-links:hover,
@@ -252,6 +269,23 @@ header .container {
 .what-are-we-do-examples {
   justify-content: space-between;
   margin: 0;
+}
+
+.what-are-we-do-examples li {
+  position: relative;
+}
+
+.hover-images {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  padding: 27px 0px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--txt-c-light);
+  font-size: 14px;
+  line-height: 16px;
+  bottom: 0px;
+  text-transform: uppercase;
 }
 /* --- /WHAT ARE WE DO --- */
 
@@ -519,8 +553,6 @@ footer address a {
   /* width: 370px; */
   background: var(--c-light);
   border: 1px solid #eeeeee;
-  overflow: hidden;
-  position: relative;
 }
 
 .project-preview:not(:nth-last-child(-n + 3)) {
@@ -537,6 +569,8 @@ footer address a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
 .project-preview a:hover,
@@ -545,10 +579,10 @@ footer address a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .project-preview a:hover .hover-overlay,
+.project-preview a:hover .hover-overlay,
 .project-preview a:focus .hover-overlay {
   top: 0;
-} */
+}
 
 .project-preview-links h2 {
   font-weight: bold;
