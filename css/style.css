@@ -67,21 +67,14 @@ h2 {
   margin: 0 0 50px 0;
 }
 
-h4 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-h5 {
+h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-h6 {
+.h3-small {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -290,7 +283,7 @@ header .container {
   padding: 30px 32px;
 }
 
-.team-member h5 {
+.team-member h3 {
   margin: 0 0 10px 0;
 }
 
@@ -523,7 +516,7 @@ footer address a {
 }
 
 .project-preview {
-  width: 370px;
+  /* width: 370px; */
   background: var(--c-light);
   border: 1px solid #eeeeee;
   overflow: hidden;
@@ -552,10 +545,10 @@ footer address a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-preview a:hover .hover-overlay,
+/* .project-preview a:hover .hover-overlay,
 .project-preview a:focus .hover-overlay {
   top: 0;
-}
+} */
 
 .project-preview-links h2 {
   font-weight: bold;
