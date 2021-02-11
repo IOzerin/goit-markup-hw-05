@@ -369,6 +369,7 @@ header .container {
 .team-member-social-link:hover svg,
 .team-member-social-link:focus svg {
   fill: var(--txt-c-light);
+  /* 1 */
 }
 /* --- /OUR TEAM --- */
 
